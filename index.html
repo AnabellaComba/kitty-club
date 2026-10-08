@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta
+            name="description"
+            content="Kitty Club: tienda de accesorios inspirados en Hello Kitty. Bolsos, llaveros y pequeños detalles kawaii."
+        >
+        <meta name="theme-color" content="#fff9f5">
+        <title>Kitty Club ♡</title>
+        <link rel="icon" href="imagenes/Hello-Kitty-Logo.png" type="image/png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+            rel="stylesheet"
+        >
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <a class="skip" href="#contenido">Saltar al contenido</a>
+        <div class="announcement">Pequeños detalles, mucha ternura ♡ <span>Bienvenida al universo Kitty</span></div>
+
+        <header>
+            <div class="container header-inner">
+                <a class="brand" href="#inicio" aria-label="Kitty Club, inicio"><span class="brand-icon">୨୧</span> Kitty<span>Club</span>
+            <small>THE KAWAII EDIT</small></a>
+
+                <nav aria-label="Navegación principal">
+                    <ul>
+                        <li>
+                            <a href="#inicio">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="#productos">Productos</a>
+                        </li>
+                        <li>
+                            <a href="#resenas">Reseñas</a>
+                        </li>
+                        <li>
+                            <a href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="cart-button" id="open-cart" type="button">Bolsita <span aria-hidden="true">♡</span>
+                         <span id="cart-count">0</span></button>
+            </div>
+        </header>
+
+        <main id="contenido">
+
+            <section class="hero container" id="inicio">
+                <div class="hero-copy">
+                    <p class="eyebrow">HELLO, KITTY LOVERS ♡</p>
+                    <h1>Un poquito de<br>magia en tu <em>día.</em></h1>
+                    <p>Accesorios que hacen sonreír. Descubrí nuestros favoritos de Hello Kitty y llevá tu lado más kawaii a todas partes.</p>
+                    <a class="button" href="#productos">Encontrá tu favorito <span aria-hidden="true">↗</span></a>
+                    <div class="hero-note"><span>♡</span> Para vos, para regalar, para amar.</div>
+                </div>
+                <div class="hero-visual">
+                    <span class="visual-caption">cute things, happy days</span>
+                    <img src="imagenes/ImagenRecepción.jpg" alt="Hello Kitty: bienvenida a Kitty Club" width="540" height="500">
+                    <span class="hero-sticker">100%<br><strong>cute vibes</strong></span>
+                </div>
+            </section>
+            <div class="benefits">
+                <div class="container benefits-inner"><span>୨୧ Detalles llenos de ternura</span>
+        <span>✧ Tu dosis de kawaii</span><span>♡ Regalos con personalidad ♡</span></div>
+            </div>
+
+            <section class="container catalog" id="productos">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">PEQUEÑAS OBSESIONES, GRANDES SONRISAS</p>
+                        <h2>Tus nuevos <em>favoritos</em></h2>
+                    </div>
+                    <p>Ese detalle que hace todo más lindo.</p>
+                </div>
+                <div class="filters" role="group" aria-label="Filtrar productos por categoría">
+                    <button type="button" class="active" data-filter="Todos" aria-pressed="true">Todos los productos</button>
+                    <button type="button" data-filter="Accesorios" aria-pressed="false">Accesorios</button>
+                    <button type="button" data-filter="Bolsos" aria-pressed="false">Bolsos y calzado</button>
+                    <button type="button" data-filter="Lifestyle" aria-pressed="false">Lifestyle</button>
+                </div>
+                <div class="products">
+
+                    <article class="product" data-category="Bolsos">
+                        <div class="product-art tone-0">
+                            <span class="badge">Favorito ♡</span>
+                            <img src="imagenes/BolsoHK.avif" alt="Bolso de Hello Kitty" width="300" height="320" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <p class="eyebrow">Bolsos</p>
+                            <h3>Mini bolso Hello Kitty</h3>
+                            <div class="product-bottom">
+                                <strong>$ 18.900</strong>
+                                <button class="add" type="button" data-id="bag" aria-label="Agregar Mini bolso Hello Kitty al carrito">+</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product" data-category="Accesorios">
+                        <div class="product-art tone-1">
+                            <img src="imagenes/LlaveroHK.avif" alt="Llavero de Hello Kitty" width="300" height="320" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <p class="eyebrow">Accesorios</p>
+                            <h3>Llavero con moñito</h3>
+                            <div class="product-bottom">
+                                <strong>$ 4.500</strong>
+                                <button class="add" type="button" data-id="keychain" aria-label="Agregar Llavero con moñito al carrito">+</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product" data-category="Bolsos">
+                        <div class="product-art tone-2">
+                            <img src="imagenes/OjotasHK.avif" alt="Ojotas de Hello Kitty" width="300" height="320" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <p class="eyebrow">Bolsos</p>
+                            <h3>Ojotas rosa</h3>
+                            <div class="product-bottom">
+                                <strong>$ 9.900</strong>
+                                <button class="add" type="button" data-id="pouch" aria-label="Agregar Neceser rosa al carrito">+</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product" data-category="Lifestyle">
+                        <div class="product-art tone-0">
+                            <img src="imagenes/PasaporteHK.avif" alt="Accesorio de pasaporte de Hello Kitty" width="300" height="320" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <p class="eyebrow">Lifestyle</p>
+                            <h3>Botella kawaii</h3>
+                            <div class="product-bottom">
+                                <strong>$ 12.500</strong>
+                                <button class="add" type="button" data-id="bottle" aria-label="Agregar Botella kawaii al carrito">+</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product" data-category="Accesorios">
+                        <div class="product-art tone-1">
+                            <img src="imagenes/Pasadores HK.avif" alt="Pasadores de Hello Kitty" width="300" height="320" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <p class="eyebrow">Accesorios</p>
+                            <h3>Set de hebillas Kitty</h3>
+                            <div class="product-bottom">
+                                <strong>$ 5.900</strong>
+                                <button class="add" type="button" data-id="clips" aria-label="Agregar Set de hebillas Kitty al carrito">+</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product" data-category="Lifestyle">
+                        <div class="product-art tone-2">
+                            <img src="imagenes/LapiceroHK.avif" alt="Lapicero de Hello Kitty" width="300" height="320" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <p class="eyebrow">Lifestyle</p>
+                            <h3>Cuaderno de sueños</h3>
+                            <div class="product-bottom">
+                                <strong>$ 7.900</strong>
+                                <button class="add" type="button" data-id="notebook" aria-label="Agregar Cuaderno de sueños al carrito">+</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <p class="catalog-note">Ilustraciones y precios de referencia · Catálogo de demostración</p>
+            </section>
+
+            <section class="story">
+                <div class="container story-inner">
+                    <span class="story-bow" aria-hidden="true">୨୧</span>
+                    <div>
+                        <p class="eyebrow">MÁS QUE UN ACCESORIO</p>
+                        <h2>Lo lindo está en los <em>detalles.</em></h2>
+                        <p>Un moñito, un toque de rosa y ese personaje que nos acompaña desde siempre. Kitty Club es un pequeño rincón para celebrar las cosas que nos hacen felices.</p>
+                    </div>
+                    <a href="#contacto" class="text-link">Conversemos ♡</a>
+                </div>
+            </section>
+
+            <section class="container reviews" id="resenas">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">EL RINCÓN DE LA COMUNIDAD</p>
+                        <h2>Amor a primera <em>Kitty</em></h2>
+                    </div>
+                    <p>Reseñas ilustrativas del proyecto.</p>
+                </div>
+                <div class="review-grid">
+
+                    <article class="review">
+                        <p class="stars" aria-label="5 de 5 estrellas">★★★★★</p>
+                        <blockquote>“El mini bolso es lo más tierno del mundo. Le da ese toque rosa a todos mis outfits.”</blockquote>
+                        <div class="review-author">
+                            <span>V</span>
+                            <p><strong>Valentina</strong><small>Fan de los pequeños detalles</small></p>
+                        </div>
+                    </article>
+
+                    <article class="review">
+                        <p class="stars" aria-label="5 de 5 estrellas">★★★★★</p>
+                        <blockquote>“Elegí el llavero para un regalo y terminé queriendo uno para mí. ¡Demasiado lindo!”</blockquote>
+                        <div class="review-author">
+                            <span>M</span>
+                            <p><strong>Martina</strong><small>Team regalos kawaii</small></p>
+                        </div>
+                    </article>
+
+                    <article class="review">
+                        <p class="stars" aria-label="5 de 5 estrellas">★★★★★</p>
+                        <blockquote>“Mi escritorio necesitaba un poquito de Hello Kitty. El lapicero es mi nuevo favorito.”</blockquote>
+                        <div class="review-author">
+                            <span>S</span>
+                            <p><strong>Sofía</strong><small>Amante de la papelería</small></p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="contact" id="contacto">
+                <div class="container contact-inner">
+                    <div class="contact-copy">
+                        <p class="eyebrow">ESTAMOS DEL OTRO LADO ♡</p>
+                        <h2>Decinos <em>hello.</em></h2>
+                        <p>¿Tenés una consulta sobre los accesorios o querés saber más? Dejanos tu mensaje.</p>
+                        <div class="contact-decoration" aria-hidden="true">♡ ✧ ୨୧</div>
+                    </div>
+
+                    <form id="contact-form" action="https://formspree.io/f/TU_FORM_ID" method="POST">
+                        <div class="form-row">
+                            <div>
+                                <label for="nombre">Tu nombre</label>
+                                <input id="nombre" name="nombre" type="text" autocomplete="name" placeholder="¿Cómo te llamás?" required maxlength="100">
+                            </div>
+                            <div>
+                                <label for="email">Correo electrónico</label>
+                                <input id="email" name="email" type="email" autocomplete="email" placeholder="vos@ejemplo.com" required maxlength="254">
+                            </div>
+                        </div>
+                        <label for="mensaje">Tu mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Te leemos…" required maxlength="5000"></textarea>
+                        <input type="text" name="_gotcha" class="honeypot" tabindex="-1" aria-hidden="true" autocomplete="off">
+                        <button class="button" type="submit">Enviar mensaje <span aria-hidden="true">↗</span></button>
+                        <p id="form-status" role="status" aria-live="polite"></p>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container footer-inner">
+                <a class="brand" href="#inicio">୨୧ kitty<span>club</span></a>
+                <p>Hecho con mucho ♡ y un poquito de rosa.</p>
+                <a href="#inicio">Volver arriba ↑</a>
+            </div>
+            <p class="footer-note">Proyecto educativo · Sin afiliación con Sanrio. Hello Kitty pertenece a Sanrio.<br>Carrito de demostración: no se realizan compras ni pagos.</p>
+        </footer>
+        <div id="toast" role="status" aria-live="polite"></div>
+
+        <dialog id="cart-dialog" aria-labelledby="cart-title">
+            <div class="dialog-heading">
+                <h2 id="cart-title">Tu bolsa ♡</h2>
+                <button id="close-cart" class="close" type="button" aria-label="Cerrar bolsa">×</button>
+            </div>
+            <p class="cart-disclaimer">Carrito de demostración. Los precios están expresados en pesos argentinos.</p>
+            <ul id="cart-items"></ul>
+            <p class="cart-total">Total <strong id="cart-total">$ 0</strong></p>
+            <button type="button" id="clear-cart" class="button">Vaciar bolsa</button>
+            <p class="cart-disclaimer">Este proyecto no procesa pagos ni pedidos.</p>
+        </dialog>
+    </body>
+</html>
