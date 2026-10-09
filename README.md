@@ -42,7 +42,16 @@ Pre Entrega Proyecto FrontEnd JS de Comba Anabella sobre una tienda de accesorio
 No se incluye un endpoint inventado: el formulario avisa si todavía no se configuró. Los estados de éxito y error dependen de la respuesta real del servicio. El envío requiere internet; no fue probado contra una cuenta real.
 
 
-//Publicación Gratuita 
+## Subir el proyecto a GitHub, sin usar la terminal
+
+1. Creá una cuenta o iniciá sesión en https://github.com/.
+2. Usá el botón + y elegí New repository.
+3. Escribí kitty-club como nombre, agregá una descripción y elegí Public. No subas claves ni datos privados.
+4. Elegí Create repository.
+5. En el repositorio nuevo, usá el enlace uploading an existing file. Si ya tiene archivos, elegí Add file → Upload files.
+6. Arrastrá index.html, styles.css, script.js, README.md y la carpeta imagenes al área de carga. Subí el contenido de FrontEnd JS directamente; no encierres todo dentro de otra carpeta.
+7. Verificá que imagenes conserve su nombre y contenga las imagenes.
+8. Escribí un mensaje como «Crear tienda Kitty Club» y elegí Commit changes.
 
 ## Publicar gratis con GitHub Pages
 
@@ -59,6 +68,8 @@ GitHub Pages sirve para publicar este proyecto estático educativo. El carrito e
 
 Para actualizar el sitio, subir las versiones nuevas de los archivos al mismo repositorio y confirmar los cambios. Pages vuelve a publicar desde la rama configurada.
 
+
+Documentación: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
 
 ## Alcance
 
